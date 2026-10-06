@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    @apply bg-mono-50 text-mono-900;
+  }
+
+  /* Focus visible for a11y — TRD requires keyboard nav */
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-mono-800;
+  }
+}
